@@ -1,0 +1,79 @@
+// TibiaEyez.rc — Win32 resource script
+// Compiled by the MSVC resource compiler (rc.exe) via CMake.
+
+#include "resource.h"
+#include <winver.h>
+
+// ── Application manifest (DPI awareness + Windows 10 compatibility) ───────────
+1 RT_MANIFEST
+BEGIN
+"<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?>\r\n"
+"<assembly xmlns=""urn:schemas-microsoft-com:asm.v1"" manifestVersion=""1.0"">\r\n"
+"  <assemblyIdentity\r\n"
+"      version=""1.0.0.0""\r\n"
+"      processorArchitecture=""*""\r\n"
+"      name=""TibiaEyez""\r\n"
+"      type=""win32""/>\r\n"
+"  <description>TibiaEyez Screen Mirroring Overlay</description>\r\n"
+"  <dependency>\r\n"
+"    <dependentAssembly>\r\n"
+"      <assemblyIdentity\r\n"
+"          type=""win32""\r\n"
+"          name=""Microsoft.Windows.Common-Controls""\r\n"
+"          version=""6.0.0.0""\r\n"
+"          processorArchitecture=""*""\r\n"
+"          publicKeyToken=""6595b64144ccf1df""\r\n"
+"          language=""*""/>\r\n"
+"    </dependentAssembly>\r\n"
+"  </dependency>\r\n"
+"  <trustInfo xmlns=""urn:schemas-microsoft-com:asm.v3"">\r\n"
+"    <security>\r\n"
+"      <requestedPrivileges>\r\n"
+"        <requestedExecutionLevel level=""asInvoker"" uiAccess=""false""/>\r\n"
+"      </requestedPrivileges>\r\n"
+"    </security>\r\n"
+"  </trustInfo>\r\n"
+"  <compatibility xmlns=""urn:schemas-microsoft-com:compatibility.v1"">\r\n"
+"    <application>\r\n"
+"      <!-- Windows 10 / 11 -->\r\n"
+"      <supportedOS Id=""{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}""/>\r\n"
+"    </application>\r\n"
+"  </compatibility>\r\n"
+"  <asmv3:application xmlns:asmv3=""urn:schemas-microsoft-com:asm.v3"">\r\n"
+"    <asmv3:windowsSettings>\r\n"
+"      <dpiAware xmlns=""http://schemas.microsoft.com/SMI/2005/WindowsSettings"">true/PM</dpiAware>\r\n"
+"      <dpiAwareness xmlns=""http://schemas.microsoft.com/SMI/2016/WindowsSettings"">PerMonitorV2</dpiAwareness>\r\n"
+"    </asmv3:windowsSettings>\r\n"
+"  </asmv3:application>\r\n"
+"</assembly>\r\n"
+END
+
+// ── Version information ────────────────────────────────────────────────────────
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    VER_MAJOR,VER_MINOR,VER_PATCH,0
+ PRODUCTVERSION VER_MAJOR,VER_MINOR,VER_PATCH,0
+ FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+ FILEFLAGS      0x0L
+ FILEOS         VOS__WINDOWS32
+ FILETYPE       VFT_APP
+ FILESUBTYPE    0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName",      "TibiaEyez"
+            VALUE "FileDescription",  "TibiaEyez — Screen Mirroring Overlay for Tibia"
+            VALUE "FileVersion",      "1.0.0"
+            VALUE "InternalName",     "TibiaEyez"
+            VALUE "LegalCopyright",   "MIT License"
+            VALUE "OriginalFilename", "TibiaEyez.exe"
+            VALUE "ProductName",      "TibiaEyez"
+            VALUE "ProductVersion",   "1.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

@@ -1,0 +1,39 @@
+# CMake build directory
+build/
+out/
+cmake-build-*/
+
+# MSVC
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.exe
+*.user
+*.suo
+*.sdf
+*.VC.db
+*.VC.opendb
+.vs/
+
+# Generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+
+# IDEs
+.idea/
+*.code-workspace
+.vscode/settings.json
+
+# User profiles saved at runtime
+profiles/
+*.ini
+
+# OS
+Thumbs.db
+.DS_Store
